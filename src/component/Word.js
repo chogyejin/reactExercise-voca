@@ -24,10 +24,6 @@ export default function Word({ word }) {
       </td>
       <td>
         <button className="btn_del">삭제</button>
-        <button>aa</button>
-        <button>aa</button>
-        <button>aa</button>
-        <button>aa</button>
       </td>
     </tr>
   );

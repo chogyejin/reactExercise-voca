@@ -4,16 +4,18 @@ import { useState } from 'react/cjs/react.development';
 
 export default function DayList() {
   const [days, setDays] = useState([]);
-  const [count, setCount] = useState(0);
 
   //useEffect 첫번째 인자 함수, 두번재 배열(의존성 배열, 최초 한 번은 빈 배열로)
+  //fetch 비동기통신
   useEffect(() => {
-    console.log('change');
-  });
-
-  function onClick() {
-    setCount(count + 1);
-  }
+    fetch('http://localhost:3001/days')
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setDays(data);
+      });
+  }, []);
   return (
     <>
       <ul className="list_day">
@@ -23,7 +25,6 @@ export default function DayList() {
           </li>
         ))}
       </ul>
-      <button onClick={onClick}>{count}</button>
     </>
   );
 }
