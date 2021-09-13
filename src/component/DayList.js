@@ -1,23 +1,9 @@
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { useState } from 'react/cjs/react.development';
+import useFetch from '../hooks/useFetch';
 
 export default function DayList() {
-  const [days, setDays] = useState([]);
+  const days = useFetch('http://localhost:3001/days');
 
-  //useEffect 첫번째 인자 함수, 두번재 배열(의존성 배열, 최초 한 번은 빈 배열로)
-  //fetch 비동기통신
-  //json-server 이용
-  useEffect(() => {
-    fetch('http://localhost:3001/days')
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setDays(data);
-        console.log(data);
-      });
-  }, []);
   return (
     <>
       <ul className="list_day">
