@@ -15,6 +15,10 @@
     {
       "day": 4,
       "id": 4
+    },
+    {
+      "day": 5,
+      "id": 5
     }
   ],
   "words": [
@@ -52,6 +56,20 @@
       "kor": "사과",
       "isDone": false,
       "id": 11
+    },
+    {
+      "day": "1",
+      "eng": "window",
+      "kor": "창문",
+      "isDone": false,
+      "id": 15
+    },
+    {
+      "day": "2",
+      "eng": "meet",
+      "kor": "만나다",
+      "isDone": false,
+      "id": 16
     }
   ]
 }
