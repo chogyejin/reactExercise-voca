@@ -70,6 +70,20 @@
       "kor": "만나다",
       "isDone": false,
       "id": 16
+    },
+    {
+      "day": "5",
+      "eng": "you",
+      "kor": "너",
+      "isDone": false,
+      "id": 17
+    },
+    {
+      "day": "3",
+      "eng": "man",
+      "kor": "남자",
+      "isDone": false,
+      "id": 18
     }
   ]
 }
