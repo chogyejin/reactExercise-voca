@@ -15,7 +15,7 @@ export default function CreateWord() {
     //isLoading이 true면(로딩 중이면) 실행하지 않고, false일 때 로직 실행
     if (!isLoading) {
       setIsLoading(true);
-      fetch(`http://localhost:3001/words/`, {
+      fetch(`http://localhost:3001/words`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

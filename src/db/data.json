@@ -19,16 +19,13 @@
     {
       "day": 5,
       "id": 5
+    },
+    {
+      "day": 6,
+      "id": 6
     }
   ],
   "words": [
-    {
-      "id": 2,
-      "day": 1,
-      "eng": "good",
-      "kor": "좋은",
-      "isDone": false
-    },
     {
       "id": 3,
       "day": 2,
@@ -84,6 +81,27 @@
       "kor": "남자",
       "isDone": false,
       "id": 18
+    },
+    {
+      "day": "1",
+      "eng": "mother",
+      "kor": "엄마",
+      "isDone": false,
+      "id": 19
+    },
+    {
+      "day": "1",
+      "eng": "dad",
+      "kor": "아빠",
+      "isDone": false,
+      "id": 20
+    },
+    {
+      "day": "1",
+      "eng": "baby",
+      "kor": "동생",
+      "isDone": false,
+      "id": 21
     }
   ]
 }
