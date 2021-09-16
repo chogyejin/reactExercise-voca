@@ -58,7 +58,7 @@
       "day": "1",
       "eng": "window",
       "kor": "창문",
-      "isDone": false,
+      "isDone": true,
       "id": 15
     },
     {
@@ -86,7 +86,7 @@
       "day": "1",
       "eng": "mother",
       "kor": "엄마",
-      "isDone": false,
+      "isDone": true,
       "id": 19
     },
     {
@@ -102,6 +102,13 @@
       "kor": "동생",
       "isDone": false,
       "id": 21
+    },
+    {
+      "day": "6",
+      "eng": "see",
+      "kor": "보다",
+      "isDone": false,
+      "id": 22
     }
   ]
 }

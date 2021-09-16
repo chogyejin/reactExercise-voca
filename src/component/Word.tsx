@@ -1,6 +1,21 @@
 import { useState } from 'react';
 
-export default function Word({ word: w }) {
+interface IProps {
+  word: IWord;
+}
+
+//data.json 참고
+//word에 대한 프로퍼티 사용가능
+//expot로 다른 파일에서도 사용가능하게
+export interface IWord {
+  day: string;
+  eng: string;
+  kor: string;
+  isDone: boolean;
+  id: number;
+}
+
+export default function Word({ word: w }: IProps) {
   const [word, setWord] = useState(w);
   const [isShow, setIsShow] = useState(false);
   const [isDone, setIsDone] = useState(word.isDone);
@@ -36,7 +51,11 @@ export default function Word({ word: w }) {
         //state 값이 변화하여 다시 렌더링
         .then((res) => {
           if (res.ok) {
-            setWord({ id: 0 });
+            setWord({
+              //id만 0으로 세팅 나머지 유지
+              ...word,
+              id: 0,
+            });
             console.log(res);
           }
         });
