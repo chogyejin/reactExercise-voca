@@ -15,6 +15,7 @@ function App() {
           <Route exact path="/">
             <DayList />
           </Route>
+          {/* day라는 변수로 url 파라미터 값을 받음 */}
           <Route path="/day/:day">
             <Day />
           </Route>
